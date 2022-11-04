@@ -1,0 +1,1 @@
+<view class="home-container data-v-57280228"><nav-bar vue-id="8dd740cc-1" class="data-v-57280228" bind:__l="__l"></nav-bar><tab-bar vue-id="8dd740cc-2" labelList="{{labelList}}" class="data-v-57280228" bind:__l="__l"></tab-bar></view>

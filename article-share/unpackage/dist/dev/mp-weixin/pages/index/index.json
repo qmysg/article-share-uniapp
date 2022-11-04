@@ -1,0 +1,7 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "nav-bar": "/uni_modules/Nav-Bar/components/Nav-Bar/Nav-Bar",
+    "tab-bar": "/uni_modules/Tab-Bar/components/Tab-Bar/Tab-Bar"
+  }
+}

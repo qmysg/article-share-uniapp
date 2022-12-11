@@ -10,15 +10,32 @@
 /* WEBPACK VAR INJECTION */(function(createApp) {__webpack_require__(/*! uni-pages */ 5);
 
 __webpack_require__(/*! @dcloudio/vue-cli-plugin-uni/packages/uni-cloud/dist/index.js */ 6);var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ 9));
+var _index2 = _interopRequireDefault(__webpack_require__(/*! ajax/api/index.js */ 15));
+var _rulesMixin = _interopRequireDefault(__webpack_require__(/*! ./common/rulesMixin.js */ 21));
+var _commonMixin = _interopRequireDefault(__webpack_require__(/*! ./common/commonMixin.js */ 22));
+var _index3 = _interopRequireDefault(__webpack_require__(/*! ./store/index.js */ 24));
 
 
-var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 4));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);enumerableOnly && (symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;})), keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = null != arguments[i] ? arguments[i] : {};i % 2 ? ownKeys(Object(source), !0).forEach(function (key) {_defineProperty(target, key, source[key]);}) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;} // @ts-ignore
-wx.__webpack_require_UNI_MP_PLUGIN__ = __webpack_require__;_vue.default.config.productionTip = false;
-_App.default.mpType = 'app';
-var app = new _vue.default(_objectSpread({},
-_App.default));
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 4));
+var _router = __webpack_require__(/*! ./router.js */ 28);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);enumerableOnly && (symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;})), keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = null != arguments[i] ? arguments[i] : {};i % 2 ? ownKeys(Object(source), !0).forEach(function (key) {_defineProperty(target, key, source[key]);}) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;} // @ts-ignore
+wx.__webpack_require_UNI_MP_PLUGIN__ = __webpack_require__; //路径换成自己的
+_vue.default.use(_router.router);
+_vue.default.use(_rulesMixin.default);
+_vue.default.use(_commonMixin.default);
+_vue.default.config.productionTip = false;
+_vue.default.prototype.$http = _index2.default;
+_App.default.mpType = "app";
+var app = new _vue.default(_objectSpread(_objectSpread({},
+_App.default), {}, {
+  store: _index3.default }));
 
-createApp(app).$mount();
+//v1.3.5起 H5端 你应该去除原有的app.$mount();使用路由自带的渲染方式
+
+
+
+
+
+createApp(app).$mount(); //为了兼容小程序及app端必须这样写才有效果
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createApp"]))
 
 /***/ }),

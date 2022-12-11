@@ -24,4 +24,16 @@
 			}
 		}
 	}
+	.return-icon {
+		position: absolute;
+		height: 60rpx;
+		left: 0;
+		@include flex(center)
+	}
+	.search-input {
+		width: 100%;
+		font-size: 28rpx;
+		color: #999;
+		text-indent: 20rpx;
+	}
 }

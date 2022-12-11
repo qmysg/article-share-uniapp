@@ -7,7 +7,7 @@
   "setting": {
     "urlCheck": false,
     "es6": false,
-    "postcss": false,
+    "postcss": true,
     "minified": false,
     "newFeature": true,
     "bigPackageSizeSupport": true,
@@ -19,7 +19,7 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.27.0",
-  "appid": "touristappid",
+  "appid": "wxfe78881af8c32dbc",
   "projectname": "article-share",
   "condition": {},
   "editorSetting": {

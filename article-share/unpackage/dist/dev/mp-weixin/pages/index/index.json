@@ -2,6 +2,7 @@
   "navigationStyle": "custom",
   "usingComponents": {
     "nav-bar": "/uni_modules/Nav-Bar/components/Nav-Bar/Nav-Bar",
-    "tab-bar": "/uni_modules/Tab-Bar/components/Tab-Bar/Tab-Bar"
+    "tab-bar": "/uni_modules/Tab-Bar/components/Tab-Bar/Tab-Bar",
+    "article-list": "/uni_modules/Article-List/components/Article-List/Article-List"
   }
 }

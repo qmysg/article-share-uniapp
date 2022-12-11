@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "save-likes": "/uni_modules/Save-Likes/components/Save-Likes/Save-Likes"
+  },
+  "component": true
+}

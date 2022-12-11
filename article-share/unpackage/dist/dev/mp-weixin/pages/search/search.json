@@ -1,5 +1,7 @@
 {
-  "navigationBarTitleText": "",
-  "enablePullDownRefresh": false,
-  "usingComponents": {}
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "nav-bar": "/uni_modules/Nav-Bar/components/Nav-Bar/Nav-Bar",
+    "list-item": "/uni_modules/List-Item/components/List-Item/List-Item"
+  }
 }

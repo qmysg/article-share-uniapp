@@ -1,0 +1,7 @@
+{
+  "name": "update_ompliments",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

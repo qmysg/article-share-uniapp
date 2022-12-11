@@ -1,5 +1,8 @@
 {
   "navigationBarTitleText": "关注",
   "enablePullDownRefresh": false,
-  "usingComponents": {}
+  "usingComponents": {
+    "list-item": "/uni_modules/List-Item/components/List-Item/List-Item",
+    "author-list": "/uni_modules/Author-List/components/Author-List/Author-List"
+  }
 }

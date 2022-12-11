@@ -3,7 +3,13 @@
     "pages/index/index",
     "pages/follow/follow",
     "pages/self/self",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/labelAdmin/labelAdmin",
+    "pages/userInfo/login/login",
+    "pages/articleDetail/articleDetail",
+    "pages/commentList/commentList",
+    "pages/myArticle/myArticle",
+    "pages/feedback/feedback"
   ],
   "subPackages": [],
   "window": {
@@ -37,5 +43,6 @@
       }
     ]
   },
+  "permission": {},
   "usingComponents": {}
 }

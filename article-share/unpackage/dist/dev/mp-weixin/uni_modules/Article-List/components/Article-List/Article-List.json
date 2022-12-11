@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "list-item": "/uni_modules/List-Item/components/List-Item/List-Item"
+  },
+  "component": true
+}
